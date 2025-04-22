@@ -1,6 +1,6 @@
 const SwitchBtn = ({ handleBtnSwitch, activeBtn }) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col md:flex-row items-center gap-6 justify-between mb-8">
       <h1 className="font-bold text-3xl">Available Players</h1>
       <div>
         <button

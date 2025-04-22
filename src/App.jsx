@@ -3,10 +3,12 @@ import "./App.css";
 import Navbar from "./Components/Header/Navbar";
 import Hero from "./Components/Hero/Hero";
 import SwitchBtn from "./Components/PageSwitch/SwitchBtn";
+import Players from "./Components/Players/Players";
 
 function App() {
   const [money, setMoney] = useState(0);
   const [activeBtn, setActiveBtn] = useState("Available");
+
   const handleAddMoney = () => {
     const newMoney = money + 1000000;
     setMoney(newMoney);
@@ -23,6 +25,7 @@ function App() {
           handleBtnSwitch={handleBtnSwitch}
           activeBtn={activeBtn}
         ></SwitchBtn>
+        <Players></Players>
       </div>
     </div>
   );
