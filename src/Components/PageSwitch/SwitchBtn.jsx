@@ -1,7 +1,14 @@
-const SwitchBtn = ({ handleBtnSwitch, activeBtn }) => {
+const SwitchBtn = ({ handleBtnSwitch, activeBtn, selectedPlayers }) => {
   return (
     <div className="flex flex-col md:flex-row items-center gap-6 justify-between mb-8">
-      <h1 className="font-bold text-3xl">Available Players</h1>
+      {activeBtn === "Available" ? (
+        <h1 className="font-bold text-3xl">Available Players</h1>
+      ) : (
+        <h1 className="font-bold text-3xl">
+          Selected Players ({selectedPlayers.length}/6)
+        </h1>
+      )}
+
       <div>
         <button
           onClick={() => handleBtnSwitch("Available")}
@@ -17,7 +24,7 @@ const SwitchBtn = ({ handleBtnSwitch, activeBtn }) => {
             activeBtn === "Selected" ? "bg-lime-400" : "bg-gray-300"
           }`}
         >
-          Selected
+          Selected ({selectedPlayers.length})
         </button>
       </div>
     </div>

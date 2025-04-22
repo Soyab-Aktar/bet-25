@@ -14,7 +14,7 @@ const Hero = ({ handleAddMoney }) => {
       <div className="w-fit mx-auto text-center py-16 px-1">
         <img src={heroLogo} alt="" className="w-60 h-48 mx-auto mb-6" />
         <h1 className="font-bold text-4xl mb-4">
-          Assemble Your Ultimate Dream 11 Cricket Team
+          Assemble Your Ultimate Bet25 Cricket Team
         </h1>
         <p className="font-medium text-2xl text-gray-500 mb-6">
           Beyond Boundaries Beyond Limits
